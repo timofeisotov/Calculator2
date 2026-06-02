@@ -41,6 +41,7 @@ public class CalculatorScript : MonoBehaviour
         } else {
             success = false;
         }
+        if (success == false) resultText.text = "Введите правильные числа!";
         return success;
     }
     public void OnClickMultiplication()
