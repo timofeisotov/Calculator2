@@ -1,18 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
-public class NewBehaviourScript : MonoBehaviour
+public class TwoNumbersComparer : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private InputField InputField1;
+    [SerializeField] private InputField InputField2;
+    [SerializeField] private Text Total;
 
-    // Update is called once per frame
-    void Update()
+    public void Compare()
     {
-        
+        if(string.IsNullOrEmpty(InputField1.text) || string.IsNullOrEmpty(InputField2.text)) {
+            Total.text = "Введите корректные числа!";
+            return;
+        }
     }
 }
+
