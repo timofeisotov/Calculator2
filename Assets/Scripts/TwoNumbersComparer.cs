@@ -27,10 +27,10 @@ public class TwoNumbersComparer : MonoBehaviour
             {
                 Total.text = "Равны";
             }
-            else
+        }
+        else
             {
                 Total.text = "Введите корректные числа!";
             }
-        }
     }
 }
